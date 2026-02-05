@@ -31,7 +31,7 @@ function App() {
 
     const newThought = await postThought(message);
 
-    if (newThought.message && !newThought.errors) {
+    if (newThought.message && !newThought.error && !newThought.errors) {
       setThoughts((prev) => [newThought, ...prev]);
       return { ok: true };
     } else {

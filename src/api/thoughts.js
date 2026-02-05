@@ -1,4 +1,4 @@
-const BASE_URL = "https://happy-thoughts-api-4ful.onrender.com";
+const BASE_URL = "https://happythoughtsapi.onrender.com";
 
 export const getThoughts = async () => {
   const res = await fetch(`${BASE_URL}/thoughts`);
